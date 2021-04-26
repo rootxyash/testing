@@ -21,7 +21,6 @@ DIR="$(pwd)"
 ## Banner
 banner () {
     clear
-    echo " "
 printf "\e[0m\n"
 printf "\e[0m                                                    \e[0m\n"
 printf "\e[0m                                                    \e[0m\n"
