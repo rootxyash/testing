@@ -211,11 +211,11 @@ until [[ "$REPLY" =~ ^[q/Q]$ ]]; do
 	active_font=`cat $TERMUX_DIR/.current_font`
     banner
     echo "
-    ${BLUE}[${RED}C${BLUE}] ${GREEN}Colors ($total_colors) (${CYAN}${active_color%.*}${GREEN})
-    ${BLUE}[${RED}F${BLUE}] ${GREEN}Fonts ($total_fonts) (${CYAN}${active_font%.*}${GREEN})
-    ${BLUE}[${RED}R${BLUE}] ${GREEN}Random
-    ${BLUE}[${RED}I${BLUE}] ${GREEN}Import
-    ${BLUE}[${RED}A${BLUE}] ${GREEN}About
+    ${BLUE}[${RED}1${BLUE}] ${GREEN}Colors ($total_colors) (${CYAN}${active_color%.*}${GREEN})
+    ${BLUE}[${RED}2${BLUE}] ${GREEN}Fonts ($total_fonts) (${CYAN}${active_font%.*}${GREEN})
+    ${BLUE}[${RED}3${BLUE}] ${GREEN}Random
+    ${BLUE}[${RED}4${BLUE}] ${GREEN}Import
+    ${BLUE}[${RED}5${BLUE}] ${GREEN}About
     ${BLUE}[${RED}Q${BLUE}] ${GREEN}Quit
     "
 
