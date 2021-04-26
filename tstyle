@@ -221,16 +221,16 @@ until [[ "$REPLY" =~ ^[q/Q]$ ]]; do
 
     { read -p ${BLUE}"    [${RED}Select Option${BLUE}]: ${GREEN}"; echo; }
 
-    if [[ "$REPLY" =~ ^[c/C/f/F/r/R/i/I/a/A/q/Q]$ ]]; then      #validate input
-        if [[ "$REPLY" =~ ^[c/C]$ ]]; then
+    if [[ "$REPLY" =~ ^[1/2/3/4/5]$ ]]; then      #validate input
+        if [[ "$REPLY" =~ ^[1]$ ]]; then
             apply_colors
-        elif [[ "$REPLY" =~ ^[f/F]$ ]]; then
+        elif [[ "$REPLY" =~ ^[2]$ ]]; then
             apply_fonts
-        elif [[ "$REPLY" =~ ^[r/R]$ ]]; then
+        elif [[ "$REPLY" =~ ^[3]$ ]]; then
             random_style
-        elif [[ "$REPLY" =~ ^[i/I]$ ]]; then
+        elif [[ "$REPLY" =~ ^[4]$ ]]; then
             import_files
-        elif [[ "$REPLY" =~ ^[a/A]$ ]]; then
+        elif [[ "$REPLY" =~ ^[5]$ ]]; then
             about_program
         fi
     else
